@@ -12,6 +12,11 @@ h1{
     font-size: 5rem;
 }
 
+section{
+    height: 100vh;
+    width: 100vw;
+}
+
 #sec1,#sec3,#sec5,#sec7,#sec9{
     background-color: rgb(240, 194, 44);
     height: 100vh;
@@ -21,7 +26,7 @@ h1{
     align-items: center;
 }
 
-#sec2,#sec4,#sec6,#sec8,#sec10{
+#sec4,#sec6,#sec8,#sec10{
     background-color: rgb(22, 80, 21);
     height: 100vh;
     width: 100vw;
@@ -29,8 +34,39 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
+//============================== section 2=======================================
+#sec2{
+    display: flex;
+    flex-direction: column;
+    .sec2-data{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        .sec2-title{
+            width: 30%;
+            z-index: 10;
+            left: 10%;
+            position: absolute;
+            h2{
+                font-weight:normal;
+                font-family:"標楷體"
+            }
+        }
+        .sec2-img{
+            display: flex;
+            justify-content: flex-end;
+            width: 80%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+//============================== footer =======================================
 footer{
-    // height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
