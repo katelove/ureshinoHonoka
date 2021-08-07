@@ -64,6 +64,24 @@ section{
             }
         }
     }
+    .sec2-word{
+        .sec2-content{
+            background-color: #fff;
+            padding: 64px;
+            box-shadow:2px 2px 10px  rgba(139, 139, 139, 0.6);
+            margin: -20px 20px 0 20px;
+            z-index: 50;
+            h3{
+                text-align: center;
+                padding-bottom: 48px;
+                font-weight:normal;
+                font-family:"標楷體";
+            }
+            p{
+                font-family:"標楷體";
+            }
+        }
+    }
 }
 
 //============================== RWD =======================================
@@ -94,7 +112,7 @@ section{
         .sec2-data{
             position: relative;
               .sec2-title{
-                  width: 40%;
+                  width: 35%;
                   position: absolute;
                   h2{
                       font-size: 25px;
@@ -102,6 +120,16 @@ section{
       
               }
           }
+          .sec2-word{
+              display: flex;
+              justify-content: flex-end;
+              flex-direction: row;
+            margin-right: 20%;
+            .sec2-content{
+                width: 60%;
+
+            }
+        }
     }
 
 }
@@ -111,7 +139,7 @@ section{
         .sec2-data{
             .sec2-title{
                 h2{
-                    font-size: 30px;
+                    font-size: 28px;
                 }
             }
         }
