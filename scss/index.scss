@@ -28,7 +28,6 @@ section {
     align-items: center;
 }
 
-.sec4,
 .sec6,
 .sec8,
 .sec10 {
@@ -154,6 +153,56 @@ section {
     }
 }
 
+//============================== section 4=======================================
+.sec4 {
+    padding-top: 5rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        span:first-child {
+            font-size: 15px;
+            font-weight: normal;
+        }
+        span:nth-child(2) {
+            font-weight: normal;
+            font-family: "標楷體";
+            margin-top: 20px;
+        }
+    }
+    .sec4-content {
+        text-align: left; // position: relative;
+        padding: 20px;
+        img {
+            max-width: 100%;
+            /*保持原有尺寸比例。但部分内容可能被剪切。*/
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+            a {
+                border: 0.5px solid grey;
+                padding: 15px;
+                border-radius: 30px;
+                color: gray;
+                font-size: 15px;
+                font-weight: normal;
+                font-family: "標楷體";
+                text-decoration: none;
+                line-height: 2;
+            }
+        
+    }
+}
 //============================== RWD =======================================
 @media (max-width:576px) {
     .sec2 {
@@ -214,6 +263,10 @@ section {
     .sec3 {
         padding-bottom: 10rem;
     }
+    .sec4 {
+      margin-top: 10rem;
+      margin-bottom: 15rem;
+    }
 }
 
 @media (min-width:768px) {
@@ -237,6 +290,29 @@ section {
     }
     .sec3 {
         margin-top: 3rem;
+    }
+    .sec4{
+        padding: 0;
+        margin: 0 ;
+        h2{
+            margin-bottom: 3rem;
+            span:first-child{
+                font-size: 15px;
+            }
+            span:nth-child(2){
+                font-size: 30px;
+                line-height: 1;
+            }
+        }
+        .sec4-content{
+            display: flex;
+            justify-content:flex-start;
+            flex-direction: row;
+            padding: 50px;
+            .sec4-word{
+               padding-left: 50px;
+            }
+        }
     }
 }
 
@@ -301,6 +377,17 @@ section {
             top: 30%;
         }
     }
+    .sec4{
+        margin-top: 5rem;
+        .sec4-content{
+            padding-left: 5rem;
+            padding-right: 5rem;
+            margin-bottom: 5rem;
+            .sec4-word{
+               padding-left: 5rem;
+            }
+        }
+    }
 }
 
 @media (min-width:1440px) {
@@ -316,6 +403,17 @@ section {
         .sec3-word {
             left: 15%;
             top: 20%;
+        }
+    }
+    .sec4{
+        margin-top: 20rem;
+        .sec4-content{
+            padding-left: 10rem;
+            padding-right: 10rem;
+            margin-bottom: 10rem;
+            .sec4-word{
+               padding-left: 10rem;
+            }
         }
     }
 }

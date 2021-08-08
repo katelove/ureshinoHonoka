@@ -34,7 +34,6 @@ section {
           align-items: center;
 }
 
-.sec4,
 .sec6,
 .sec8,
 .sec10 {
@@ -212,6 +211,78 @@ section {
   line-height: 2;
 }
 
+.sec4 {
+  padding-top: 5rem;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec4 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec4 h2 span:first-child {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.sec4 h2 span:nth-child(2) {
+  font-weight: normal;
+  font-family: "標楷體";
+  margin-top: 20px;
+}
+
+.sec4 .sec4-content {
+  text-align: left;
+  padding: 20px;
+}
+
+.sec4 .sec4-content img {
+  max-width: 100%;
+  /*保持原有尺寸比例。但部分内容可能被剪切。*/
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.sec4 .sec4-content p {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.sec4 .sec4-content a {
+  border: 0.5px solid grey;
+  padding: 15px;
+  border-radius: 30px;
+  color: gray;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "標楷體";
+  text-decoration: none;
+  line-height: 2;
+}
+
 @media (max-width: 576px) {
   .sec2 .sec2-data {
     -webkit-box-orient: vertical;
@@ -276,6 +347,10 @@ section {
   .sec3 {
     padding-bottom: 10rem;
   }
+  .sec4 {
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -297,6 +372,36 @@ section {
   }
   .sec3 {
     margin-top: 3rem;
+  }
+  .sec4 {
+    padding: 0;
+    margin: 0;
+  }
+  .sec4 h2 {
+    margin-bottom: 3rem;
+  }
+  .sec4 h2 span:first-child {
+    font-size: 15px;
+  }
+  .sec4 h2 span:nth-child(2) {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .sec4 .sec4-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px;
+  }
+  .sec4 .sec4-content .sec4-word {
+    padding-left: 50px;
   }
 }
 
@@ -359,6 +464,17 @@ section {
     left: 10%;
     top: 30%;
   }
+  .sec4 {
+    margin-top: 5rem;
+  }
+  .sec4 .sec4-content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .sec4 .sec4-content .sec4-word {
+    padding-left: 5rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -371,6 +487,17 @@ section {
   .sec3 .sec3-word {
     left: 15%;
     top: 20%;
+  }
+  .sec4 {
+    margin-top: 20rem;
+  }
+  .sec4 .sec4-content {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 10rem;
+  }
+  .sec4 .sec4-content .sec4-word {
+    padding-left: 10rem;
   }
 }
 
