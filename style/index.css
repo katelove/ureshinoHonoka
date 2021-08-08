@@ -15,7 +15,11 @@ section {
   width: 100vw;
 }
 
-.sec1, .sec3, .sec5, .sec7, .sec9 {
+.sec1,
+.sec3,
+.sec5,
+.sec7,
+.sec9 {
   background-color: #f0c22c;
   height: 100vh;
   width: 100vw;
@@ -30,7 +34,10 @@ section {
           align-items: center;
 }
 
-.sec4, .sec6, .sec8, .sec10 {
+.sec4,
+.sec6,
+.sec8,
+.sec10 {
   background-color: #165015;
   height: 100vh;
   width: 100vw;
@@ -97,6 +104,10 @@ section {
 .sec2 .sec2-word .sec2-content {
   background-color: #fff;
   padding: 64px;
+  /*
+            box-shadow: h-shadow v-shadow blur spread color inset;
+            box-shadow: 水平陰影的位置  垂直陰影的位置   模糊距離  正值時陰影擴張
+            */
   -webkit-box-shadow: 2px 2px 10px rgba(139, 139, 139, 0.6);
           box-shadow: 2px 2px 10px rgba(139, 139, 139, 0.6);
   margin: -20px 20px 0 20px;
@@ -134,6 +145,12 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .sec2 .sec2-word .sec2-content {
+    padding: 25px;
+    height: 100%;
+    -webkit-box-shadow: 2px 2px 20px rgba(139, 139, 139, 0.6);
+            box-shadow: 2px 2px 20px rgba(139, 139, 139, 0.6);
   }
 }
 
