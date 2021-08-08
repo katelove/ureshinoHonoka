@@ -170,11 +170,15 @@ section {
 
 .sec3 .sec3-content {
   text-align: center;
+  position: relative;
 }
 
 .sec3 .sec3-content img {
   max-width: 100%;
-  margin: auto;
+  /*保持原有尺寸比例。但部分内容可能被剪切。*/
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .sec3 .sec3-content .sec3-word {
@@ -191,14 +195,23 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 2px 2px 10px rgba(139, 139, 139, 0.6);
+          box-shadow: 2px 2px 10px rgba(139, 139, 139, 0.6);
+  background-color: white;
+  font-family: "標楷體";
+  text-decoration: none;
+  padding: 39px;
+  z-index: 10;
 }
 
-.sec3 .sec3-content .sec3-word .sec3-btn {
-  width: 300px;
+.sec3 .sec3-content .sec3-word a {
+  width: 50%;
   border: grey;
   border-radius: 20px;
   color: gray;
   font-size: 20px;
+  font-weight: normal;
+  font-family: "標楷體";
   text-decoration: none;
 }
 
@@ -228,6 +241,9 @@ section {
     height: 100%;
     -webkit-box-shadow: 2px 2px 20px rgba(139, 139, 139, 0.6);
             box-shadow: 2px 2px 20px rgba(139, 139, 139, 0.6);
+  }
+  .sec3 .sec3-content img {
+    height: 50vh;
   }
 }
 
