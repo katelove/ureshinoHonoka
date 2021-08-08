@@ -92,6 +92,52 @@ section {
     }
 }
 
+//============================== section 3=======================================
+.sec3 {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:5rem 0;
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px;
+        span:first-child{
+            font-size: 15px;
+            font-weight: normal;
+        }
+        span:nth-child(2) {
+            font-weight: normal;
+            font-family: "標楷體";
+            margin-top: 20px;
+        }
+    }
+    .sec3-content{
+        text-align: center;
+        img{
+            max-width: 100%;
+            margin: auto;
+        }
+        .sec3-word{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .sec3-btn{
+                width: 300px;
+                border: grey;
+                border-radius: 20px;
+                color: gray;
+                font-size: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 //============================== RWD =======================================
 @media (max-width:576px) {
     .sec2 {

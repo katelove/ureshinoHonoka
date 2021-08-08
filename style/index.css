@@ -125,6 +125,83 @@ section {
   font-family: "標楷體";
 }
 
+.sec3 {
+  background-color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5rem 0;
+}
+
+.sec3 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px;
+}
+
+.sec3 h2 span:first-child {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.sec3 h2 span:nth-child(2) {
+  font-weight: normal;
+  font-family: "標楷體";
+  margin-top: 20px;
+}
+
+.sec3 .sec3-content {
+  text-align: center;
+}
+
+.sec3 .sec3-content img {
+  max-width: 100%;
+  margin: auto;
+}
+
+.sec3 .sec3-content .sec3-word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec3 .sec3-content .sec3-word .sec3-btn {
+  width: 300px;
+  border: grey;
+  border-radius: 20px;
+  color: gray;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 @media (max-width: 576px) {
   .sec2 .sec2-data {
     -webkit-box-orient: vertical;
