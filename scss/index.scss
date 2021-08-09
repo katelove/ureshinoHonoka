@@ -17,7 +17,6 @@ section {
 
 .sec1,
 .sec3,
-.sec5,
 .sec7,
 .sec9 {
     background-color: rgb(240, 194, 44);
@@ -201,6 +200,54 @@ section {
                 line-height: 2;
             }
         
+    }
+}
+
+//============================== section 5=======================================
+.sec5{
+    display: flex;
+    flex-direction: column;
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        span:first-child {
+            font-size: 15px;
+            font-weight: normal;
+        }
+        span:nth-child(2) {
+            font-weight: normal;
+            font-family: "標楷體";
+            margin-top: 20px;
+        }
+    }
+    .sec5-content-1point{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{
+           width: 100%;
+        }
+    }
+    .sec5-content-2point{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        img{
+           width: 100%;
+        }
+    }
+    .sec5-content-3point{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{
+           width: 100%;
+        }
     }
 }
 //============================== RWD =======================================
