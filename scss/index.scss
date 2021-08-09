@@ -159,7 +159,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     h2 {
         display: flex;
         justify-content: center;
@@ -184,34 +183,35 @@ section {
             object-fit: cover;
             margin-bottom: 1rem;
         }
-        p{
+        p {
             font-size: 10px;
             margin-bottom: 20px;
         }
-            a {
-                border: 0.5px solid grey;
-                padding: 15px;
-                border-radius: 30px;
-                color: gray;
-                font-size: 15px;
-                font-weight: normal;
-                font-family: "標楷體";
-                text-decoration: none;
-                line-height: 2;
-            }
-        
+        a {
+            border: 0.5px solid grey;
+            padding: 15px;
+            border-radius: 30px;
+            color: gray;
+            font-size: 15px;
+            font-weight: normal;
+            font-family: "標楷體";
+            text-decoration: none;
+            line-height: 2;
+        }
     }
 }
 
 //============================== section 5=======================================
-.sec5{
+.sec5 {
     display: flex;
     flex-direction: column;
+    background-color: #FAFAFA;
     h2 {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin: 5rem 0;
         span:first-child {
             font-size: 15px;
             font-weight: normal;
@@ -222,34 +222,44 @@ section {
             margin-top: 20px;
         }
     }
-    .sec5-content-1point{
+    .sec5-content-1point {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        img{
-           width: 100%;
+        justify-content: space-around;
+        align-items:center;
+        figure{
+            margin-bottom: 2rem;
+            width: 50%;
+            img {
+                width: 100%;
+            }
         }
+        .sec5-word{
+            width: 40%;
+            margin: 2rem 0;
+        }
+
     }
-    .sec5-content-2point{
+    .sec5-content-2point {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        img{
-           width: 100%;
+        img {
+            width: 100%;
         }
     }
-    .sec5-content-3point{
+    .sec5-content-3point {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        img{
-           width: 100%;
+        img {
+            width: 100%;
         }
     }
 }
+
 //============================== RWD =======================================
 @media (max-width:576px) {
     .sec2 {
@@ -284,6 +294,11 @@ section {
             }
         }
     }
+    .sec5{
+        .sec5-word{
+            margin: 2rem 0;
+        }
+    }
 }
 
 @media (min-width:576px) {
@@ -311,8 +326,8 @@ section {
         padding-bottom: 10rem;
     }
     .sec4 {
-      margin-top: 10rem;
-      margin-bottom: 15rem;
+        margin-top: 10rem;
+        margin-bottom: 15rem;
     }
 }
 
@@ -338,26 +353,26 @@ section {
     .sec3 {
         margin-top: 3rem;
     }
-    .sec4{
+    .sec4 {
         padding: 0;
-        margin: 0 ;
-        h2{
+        margin: 0;
+        h2 {
             margin-bottom: 3rem;
-            span:first-child{
+            span:first-child {
                 font-size: 15px;
             }
-            span:nth-child(2){
+            span:nth-child(2) {
                 font-size: 30px;
                 line-height: 1;
             }
         }
-        .sec4-content{
+        .sec4-content {
             display: flex;
-            justify-content:flex-start;
+            justify-content: flex-start;
             flex-direction: row;
             padding: 50px;
-            .sec4-word{
-               padding-left: 50px;
+            .sec4-word {
+                padding-left: 50px;
             }
         }
     }
@@ -424,14 +439,14 @@ section {
             top: 30%;
         }
     }
-    .sec4{
+    .sec4 {
         margin-top: 5rem;
-        .sec4-content{
+        .sec4-content {
             padding-left: 5rem;
             padding-right: 5rem;
             margin-bottom: 5rem;
-            .sec4-word{
-               padding-left: 5rem;
+            .sec4-word {
+                padding-left: 5rem;
             }
         }
     }
@@ -452,14 +467,14 @@ section {
             top: 20%;
         }
     }
-    .sec4{
+    .sec4 {
         margin-top: 20rem;
-        .sec4-content{
+        .sec4-content {
             padding-left: 10rem;
             padding-right: 10rem;
             margin-bottom: 10rem;
-            .sec4-word{
-               padding-left: 10rem;
+            .sec4-word {
+                padding-left: 10rem;
             }
         }
     }

@@ -290,6 +290,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #FAFAFA;
 }
 
 .sec5 h2 {
@@ -306,6 +307,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 5rem 0;
 }
 
 .sec5 h2 span:first-child {
@@ -327,16 +329,25 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.sec5 .sec5-content-1point img {
+.sec5 .sec5-content-1point figure {
+  margin-bottom: 2rem;
+  width: 50%;
+}
+
+.sec5 .sec5-content-1point figure img {
   width: 100%;
+}
+
+.sec5 .sec5-content-1point .sec5-word {
+  width: 40%;
+  margin: 2rem 0;
 }
 
 .sec5 .sec5-content-2point {
@@ -411,6 +422,9 @@ section {
   }
   .sec3 .sec3-content img {
     height: 50vh;
+  }
+  .sec5 .sec5-word {
+    margin: 2rem 0;
   }
 }
 
