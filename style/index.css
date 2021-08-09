@@ -50,6 +50,18 @@ section {
           align-items: center;
 }
 
+.btn-link {
+  border: 0.5px solid grey;
+  padding: 15px;
+  border-radius: 30px;
+  color: gray;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "標楷體";
+  text-decoration: none;
+  line-height: 2;
+}
+
 .sec2 {
   display: -webkit-box;
   display: -ms-flexbox;
