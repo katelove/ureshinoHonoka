@@ -37,18 +37,58 @@ section {
     justify-content: center;
     align-items: center;
 }
-//============================== btn link =======================================
-.btn-link{
+
+//============================== 區塊共用元素 =======================================
+// 區塊Btn
+.btn-link {
     border: 0.5px solid grey;
     padding: 15px;
     border-radius: 30px;
-    color: gray;
+    width: 20%;
     font-size: 15px;
     font-weight: normal;
     font-family: "標楷體";
-    text-decoration: none;
     line-height: 2;
+    text-align: center;
+    a{
+        color: gray;
+        text-decoration: none;
+    }
 }
+
+// 區塊標題
+.sec-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    span:first-child {
+        font-size: 15px;
+        font-weight: normal;
+    }
+    span:nth-child(2) {
+        font-weight: normal;
+        font-family: "標楷體";
+        margin-top: 20px;
+    }
+}
+
+// 區塊產品名
+.sec-product {
+    color: #000;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    h3 {
+        margin-bottom: 1.5rem;
+        line-height: 1.5rem;
+    } 
+    // 區塊產品價格
+    p {
+        font-weight: 200;
+    }
+}
+
 //============================== section 2=======================================
 .sec2 {
     display: flex;
@@ -217,23 +257,22 @@ section {
     display: flex;
     flex-direction: column;
     background-color: #FAFAFA;
-    margin: 2rem 0;
-    h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 1.5rem 0;
-        span:first-child {
-            font-size: 15px;
-            font-weight: normal;
-        }
-        span:nth-child(2) {
-            font-weight: normal;
-            font-family: "標楷體";
-            margin-top: 20px;
-        }
-    }
+    margin: 2rem 0; // h2 {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-direction: column;
+    //     margin: 1.5rem 0;
+    //     span:first-child {
+    //         font-size: 15px;
+    //         font-weight: normal;
+    //     }
+    //     span:nth-child(2) {
+    //         font-weight: normal;
+    //         font-family: "標楷體";
+    //         margin-top: 20px;
+    //     }
+    // }
     .sec5-content-point {
         display: flex;
         flex-direction: row;
@@ -266,6 +305,28 @@ section {
     .pic-reverse {
         flex-direction: row-reverse;
     }
+}
+
+//============================== section 6=======================================
+.sec6 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    .product-img{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 3;
+        flex-shrink: 2;
+        flex-basis: 300px;
+        img{
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+
 }
 
 //============================== RWD =======================================
@@ -349,11 +410,12 @@ section {
     }
     .sec5 {
         width: 100%;
-        height: 100%;
-        h2 {
-            margin: 5rem;
-
-        }
+        height: 100%; // h2 {
+        //     margin: 5rem;
+        // }
+    }
+    .sec-title {
+        margin: 5rem;
     }
 }
 
@@ -492,16 +554,16 @@ section {
             }
         }
     }
-    .sec5{
-        .sec5-word{
-            h5{
+    .sec5 {
+        .sec5-word {
+            h5 {
                 font-size: 20px;
             }
-            h3{
+            h3 {
                 font-size: 25px;
                 margin-bottom: 1rem;
             }
-            p{
+            p {
                 font-weight: 500;
                 line-height: 2.2;
                 padding-right: 5rem;
@@ -536,7 +598,6 @@ section {
             }
         }
     }
-
 }
 
 //============================== footer =======================================
