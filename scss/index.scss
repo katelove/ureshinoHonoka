@@ -341,7 +341,7 @@ section {
         height: 100%;
         h2 {
             margin: 5rem;
-            
+
         }
     }
 }
@@ -481,6 +481,22 @@ section {
             }
         }
     }
+    .sec5{
+        .sec5-word{
+            h5{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 25px;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-weight: 500;
+                line-height: 2.2;
+                padding-right: 5rem;
+            }
+        }
+    }
 }
 
 @media (min-width:1440px) {
@@ -509,6 +525,7 @@ section {
             }
         }
     }
+
 }
 
 //============================== footer =======================================

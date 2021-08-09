@@ -594,6 +594,18 @@ section {
   .sec4 .sec4-content .sec4-word {
     padding-left: 5rem;
   }
+  .sec5 .sec5-word h5 {
+    font-size: 20px;
+  }
+  .sec5 .sec5-word h3 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .sec5 .sec5-word p {
+    font-weight: 500;
+    line-height: 2.2;
+    padding-right: 5rem;
+  }
 }
 
 @media (min-width: 1440px) {
