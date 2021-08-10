@@ -654,6 +654,7 @@ footer {
 }
 
 @media (min-width:1200px) {
+
     .sec2 {
         .sec2-data {
             .sec2-title {
@@ -722,6 +723,8 @@ footer {
 }
 
 @media (min-width:1440px) {
+
+
     .sec2 {
         .sec2-word {
             .sec2-content {
@@ -745,6 +748,16 @@ footer {
             .sec4-word {
                 padding-left: 10rem;
             }
+        }
+    }
+
+}
+
+@media screen and (max-width:1500px){
+    .sec1{
+        .mySlides{
+            background-size: auto 100%;
+            object-fit: cover;
         }
     }
 }
