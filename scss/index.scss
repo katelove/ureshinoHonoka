@@ -112,6 +112,7 @@ footer {
     height: 100%; // margin: 3rem 0;
     padding: 3rem 0;
 }
+
 //============================== nav =======================================
 .menu-icon {
     display: flex;
@@ -129,7 +130,7 @@ footer {
     cursor: pointer;
     div {
         font-size: 40px;
-    } 
+    }
 }
 
 .nav-list {
@@ -167,27 +168,52 @@ footer {
 }
 
 //============================== carouse& sectionl ===============================
-.sec1{
-        width: calc( 100% - 80px);
-        position: relative;
-        .sec-carousel{
-            img{
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                position: absolute;
-            }
-        }
-    
+.sec1 {
+    width: calc( 100% - 80px);
+    position: relative;
+    .sec-carousel {
+        z-index: 999;
+         top:50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+        position: absolute;
     }
+    .mySlides{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: slide 15s infinite;
+        background-image: url("../images/main01.jpg");
+        background-size: 100% auto;
+        object-fit: cover;
+        background-repeat:no-repeat;
+
+    }
+}
 
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+
+@keyframes slide {
+  20% {
+    background-image: url("../images/main02.jpg");
+}
+40% {
+    background-image: url("../images/main03.jpg");
+}
+60% {
+    background-image: url("../images/main04.jpg");
+}
+80% {
+    background-image: url("../images/main05.jpg");
+}
+100% {
+    background-image: url("../images/main06.jpg");
+}
+}
+
 
 //============================== section 2=======================================
 .sec2 {

@@ -12,3 +12,4 @@ menuClose.addEventListener('click',function(){
     menuList.classList.toggle('hide');
     menuClose.style.display='none';
 })
+
