@@ -43,25 +43,20 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    width: 10%;
+    width: 80px;
     padding: 5px 0;
     border-color: white;
     cursor: pointer;
     div {
         font-size: 40px;
-    } // .nav-close{
-    //     font-size: 40px;
-    //     display: none;
-    //     z-index: 99;
-    //     position: fixed;
-    // }
+    } 
 }
 
 .nav-list {
     display: flex;
     flex-direction: column;
     background-image: url("../images/bg-navi-inner.jpg");
-    width: 30%;
+    width: 400px;
     position: fixed;
     right: 0;
     height: 100vh;
