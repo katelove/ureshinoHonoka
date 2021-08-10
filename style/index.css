@@ -14,12 +14,7 @@ section {
   height: 100vh;
 }
 
-.sec1,
-.sec3,
-.sec9 {
-  background-color: #f0c22c;
-  height: 100vh;
-  width: 100vw;
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,11 +24,13 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #989b96;
+  color: white;
 }
 
-.sec8,
-.sec10 {
-  background-color: #165015;
+.sec1,
+.sec3 {
+  background-color: #f0c22c;
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
@@ -476,6 +473,11 @@ section {
       flex-basis: 250px;
 }
 
+.sec8 {
+  background-image: url("../images/bg-footer.jpg");
+  height: 50vh;
+}
+
 @media (max-width: 576px) {
   .sec2 .sec2-data {
     -webkit-box-orient: vertical;
@@ -794,18 +796,5 @@ section {
   .sec4 .sec4-content .sec4-word {
     padding-left: 10rem;
   }
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #d4560d;
 }
 /*# sourceMappingURL=index.css.map */
