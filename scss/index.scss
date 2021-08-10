@@ -24,68 +24,6 @@ footer {
     color: white;
 }
 
-// .sec3 {
-//     background-color: rgb(240, 194, 44);
-//     height: 100vh;
-//     width: 100vw;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-//============================== nav =======================================
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url("../images/bg-drawer.jpg");
-    background-size: cover; //圖片填滿整個容器
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80px;
-    padding: 5px 0;
-    border-color: white;
-    cursor: pointer;
-    div {
-        font-size: 40px;
-    } 
-}
-
-.nav-list {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../images/bg-navi-inner.jpg");
-    width: 400px;
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    z-index: 50;
-    ul {
-        list-style: none;
-        padding: 10rem 0;
-        padding-left: 2rem;
-        li {
-            margin: 1.5rem;
-            a {
-                text-decoration: none;
-                color: rgb(58, 57, 57);
-            }
-        }
-    }
-}
-
-// menu 收合
-.hide {
-    display: none;
-    z-index: 99;
-}
-
-.nav-close {
-    background: rgb(255, 255, 255);
-    text-align: center;
-}
-
 //============================== 區塊共用元素 =======================================
 // 區塊Btn
 .btn-link {
@@ -174,6 +112,82 @@ footer {
     height: 100%; // margin: 3rem 0;
     padding: 3rem 0;
 }
+//============================== nav =======================================
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/bg-drawer.jpg");
+    background-size: cover; //圖片填滿整個容器
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    padding: 5px 0;
+    border-color: white;
+    cursor: pointer;
+    div {
+        font-size: 40px;
+    } 
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/bg-navi-inner.jpg");
+    width: 400px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    z-index: 50;
+    ul {
+        list-style: none;
+        padding: 10rem 0;
+        padding-left: 2rem;
+        li {
+            margin: 1.5rem;
+            a {
+                text-decoration: none;
+                color: rgb(58, 57, 57);
+            }
+        }
+    }
+}
+
+// menu 收合
+.hide {
+    display: none;
+    z-index: 99;
+}
+
+.nav-close {
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+//============================== carouse& sectionl ===============================
+.sec1{
+        width: calc( 100% - 80px);
+        position: relative;
+        .sec-carousel{
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                position: absolute;
+            }
+        }
+    
+    }
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 
 //============================== section 2=======================================
 .sec2 {

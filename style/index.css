@@ -29,74 +29,6 @@ footer {
   color: white;
 }
 
-.menu-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url("../images/bg-drawer.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 80px;
-  padding: 5px 0;
-  border-color: white;
-  cursor: pointer;
-}
-
-.menu-icon div {
-  font-size: 40px;
-}
-
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url("../images/bg-navi-inner.jpg");
-  width: 400px;
-  position: fixed;
-  right: 0;
-  height: 100vh;
-  z-index: 50;
-}
-
-.nav-list ul {
-  list-style: none;
-  padding: 10rem 0;
-  padding-left: 2rem;
-}
-
-.nav-list ul li {
-  margin: 1.5rem;
-}
-
-.nav-list ul li a {
-  text-decoration: none;
-  color: #3a3939;
-}
-
-.hide {
-  display: none;
-  z-index: 99;
-}
-
-.nav-close {
-  background: white;
-  text-align: center;
-}
-
 .btn-link {
   border: 0.5px solid grey;
   padding: 15px;
@@ -215,6 +147,94 @@ footer {
           align-items: center;
   height: 100%;
   padding: 3rem 0;
+}
+
+.menu-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/bg-drawer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  padding: 5px 0;
+  border-color: white;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  font-size: 40px;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../images/bg-navi-inner.jpg");
+  width: 400px;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  z-index: 50;
+}
+
+.nav-list ul {
+  list-style: none;
+  padding: 10rem 0;
+  padding-left: 2rem;
+}
+
+.nav-list ul li {
+  margin: 1.5rem;
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: #3a3939;
+}
+
+.hide {
+  display: none;
+  z-index: 99;
+}
+
+.nav-close {
+  background: white;
+  text-align: center;
+}
+
+.sec1 {
+  width: calc( 100% - 80px);
+  position: relative;
+}
+
+.sec1 .sec-carousel img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .sec2 {
