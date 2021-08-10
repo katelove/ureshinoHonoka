@@ -69,6 +69,7 @@ footer {
   position: fixed;
   right: 0;
   height: 100vh;
+  z-index: 50;
 }
 
 .nav-list ul {
@@ -88,6 +89,12 @@ footer {
 
 .hide {
   display: none;
+  z-index: 99;
+}
+
+.nav-close {
+  background: white;
+  text-align: center;
 }
 
 .btn-link {
