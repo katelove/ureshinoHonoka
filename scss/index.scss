@@ -21,7 +21,7 @@ footer {
     background: rgb(152, 155, 150);
     color: white;
 }
-.sec1,
+
 .sec3 {
     background-color: rgb(240, 194, 44);
     height: 100vh;
@@ -30,7 +30,13 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+//============================== nav =======================================
+.nav-bg{
+    background-image: url("../images/bg-drawer.jpg") ;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
 //============================== 區塊共用元素 =======================================
 // 區塊Btn
 .btn-link {
@@ -345,6 +351,7 @@ footer {
 .sec8{
     background-image: url("../images/bg-footer.jpg");
     height: 50vh;
+
 }
 //============================== RWD =======================================
 @media (max-width:576px) {
