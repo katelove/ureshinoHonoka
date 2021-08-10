@@ -49,6 +49,7 @@ footer {
   width: 10%;
   padding: 5px 0;
   border-color: white;
+  cursor: pointer;
 }
 
 .menu-icon div {
@@ -68,7 +69,6 @@ footer {
   position: fixed;
   right: 0;
   height: 100vh;
-  display: none;
 }
 
 .nav-list ul {
@@ -84,6 +84,10 @@ footer {
 .nav-list ul li a {
   text-decoration: none;
   color: #3a3939;
+}
+
+.hide {
+  display: none;
 }
 
 .btn-link {
