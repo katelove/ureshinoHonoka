@@ -16,7 +16,7 @@ section {
     height: 100vh;
 }
 
-footer {
+.footer-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ footer {
     }
 }
 
-.sec-btn{
+.sec-btn {
     width: 30%;
 }
 
@@ -331,7 +331,6 @@ footer {
                 font-weight: normal;
                 letter-spacing: 2pt;
             }
-       
         }
     }
 }
@@ -339,14 +338,14 @@ footer {
 //============================== section 4=======================================
 .sec4 {
     background-color: #ffffff;
-    margin: 10rem 0; 
+    margin: 10rem 0;
     .sec4-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
-        align-items: center; 
+        align-items: center;
         figure {
             margin-bottom: 2rem;
             width: 50%;
@@ -365,10 +364,9 @@ footer {
                 line-height: 2;
                 font-weight: 300;
             }
-            img{
+            img {
                 width: 100%;
             }
-
         }
     }
 }
@@ -430,13 +428,25 @@ footer {
 //============================== section 8=======================================
 .sec8 {
     background-image: url("../images/bg-footer.jpg");
-    height: 50vh;
+    height: auto;
+    .footer-word ul {
+        list-style: none;
+        li {
+            padding-left: 30px;
+            background: url("../images/ico-footer.jpg") no-repeat left center;
+            margin: .2rem 0;
+            a {
+                text-decoration: none;
+                color: rgb(80, 78, 78);
+            }
+        }
+    }
 }
 
 //============================== RWD =======================================
 @media (max-width:576px) {
-       // sec2 和 sec3 區塊
-       .sec-btn{
+    // sec2 和 sec3 區塊
+    .sec-btn {
         width: 40%;
     }
     .sec2 {
@@ -469,7 +479,7 @@ footer {
                 box-shadow: 2px 2px 20px rgba(139, 139, 139, 0.6);
             }
         }
-    } 
+    }
     .sec3 {
         margin-top: 20rem;
         .sec3-content {
@@ -481,13 +491,13 @@ footer {
     .sec4 {
         margin: 2rem 0;
         padding: 3rem;
-        .sec4-content{
+        .sec4-content {
             flex-direction: column;
-            figure{
+            figure {
                 width: 100%;
                 height: auto;
             }
-            .sec4-word{
+            .sec4-word {
                 width: 100%;
             }
         }
@@ -522,13 +532,21 @@ footer {
             }
         }
     }
+    .sec8 {
+        .logo-size {
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
 }
 
 @media (min-width:576px) {
-        // sec2 和 sec3 區塊
-        .sec-btn{
-            width: 50%;
-        }
+    // sec2 和 sec3 區塊
+    .sec-btn {
+        width: 50%;
+    }
     .sec2 {
         .sec2-data {
             flex-direction: row;
@@ -546,7 +564,7 @@ footer {
                 padding: 28px;
             }
         }
-    } 
+    }
     .sec4 {
         margin: 1rem 0;
         padding: 4rem;
@@ -586,15 +604,14 @@ footer {
     .sec3 {
         margin-top: 5rem;
         padding-bottom: 5rem;
-    } 
-    .sec4 {    
-        .sec4-content{
+    }
+    .sec4 {
+        .sec4-content {
             align-items: flex-start;
-
-            .sec4-word{
-            img{
-                margin: 1rem 0;
-            }
+            .sec4-word {
+                img {
+                    margin: 1rem 0;
+                }
             }
         }
     }
@@ -604,6 +621,19 @@ footer {
         .sec5-content-point {
             figure {
                 margin-bottom: 6rem;
+            }
+        }
+    }
+    .sec8 {
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem;
+        .sec8-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .footer-word {
+                margin: 0 1rem;
             }
         }
     }
@@ -618,12 +648,10 @@ footer {
         }
     }
     .sec4 {
-
-        .sec4-content{
+        .sec4-content {
             max-width: 1280px;
-            justify-content:space-around;
+            justify-content: space-around;
         }
-  
     }
     .sec5 {
         .sec5-content-point {
@@ -676,8 +704,7 @@ footer {
                 }
             }
         }
-    } 
-
+    }
     .sec5 {
         .sec5-word {
             h5 {
@@ -700,13 +727,21 @@ footer {
         flex-basis: 300px;
         margin: 2rem;
     }
+    .sec8 {
+        padding: 5rem;
+        .sec8-menu {
+            .footer-word {
+                margin: 0 3rem;
+            }
+        }
+    }
 }
 
 @media (min-width:1440px) {
     .sec3 {
         margin-top: 10rem;
     }
-    .sec4{
+    .sec4 {
         .sec4-content {
             justify-content: space-between;
         }
@@ -731,6 +766,14 @@ footer {
                 h3 {
                     font-size: 1.5vw;
                 }
+            }
+        }
+    }
+    .sec8 {
+        padding: 5rem 20rem;
+        .sec8-menu {
+            .footer-word {
+                margin: 0 5rem;
             }
         }
     }
