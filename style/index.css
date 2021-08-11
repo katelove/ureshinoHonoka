@@ -29,6 +29,21 @@ footer {
   color: white;
 }
 
+.section-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 3rem 0;
+}
+
 .btn-link {
   border: 0.5px solid grey;
   padding: 15px;
@@ -132,21 +147,6 @@ footer {
 
 .product-div a img {
   width: 100%;
-}
-
-.section-position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  padding: 3rem 0;
 }
 
 .menu-icon {
@@ -414,45 +414,6 @@ footer {
 
 .sec3 {
   background-color: #FAFAFA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: -14rem;
-}
-
-.sec3 h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 40px;
-}
-
-.sec3 h2 span:first-child {
-  font-size: 15px;
-  font-weight: normal;
-}
-
-.sec3 h2 span:nth-child(2) {
-  font-weight: normal;
-  font-family: "標楷體";
-  margin-top: 20px;
 }
 
 .sec3 .sec3-content {
@@ -657,12 +618,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: Static;
+    position: static;
   }
   .sec2 .sec2-data .sec2-title {
     width: 100%;
     text-align: center;
-    position: Static;
+    position: static;
     margin: 20px 0;
   }
   .sec2 .sec2-data .sec2-title h2 {
@@ -688,7 +649,7 @@ footer {
     height: 100%;
   }
   .sec3 {
-    margin-top: 10rem;
+    margin-top: 20rem;
   }
   .sec3 .sec3-content img {
     height: 50vh;
@@ -745,9 +706,6 @@ footer {
     right: 0;
     padding: 28px;
   }
-  .sec3 {
-    padding-bottom: 10rem;
-  }
   .sec4 {
     margin-top: 10rem;
     margin-bottom: 15rem;
@@ -785,7 +743,8 @@ footer {
     width: 60%;
   }
   .sec3 {
-    margin-top: 3rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
   }
   .sec4 {
     padding: 0;
@@ -860,35 +819,23 @@ footer {
     width: 50%;
   }
   .sec3 {
-    position: relative;
+    margin-top: 3rem;
   }
   .sec3 .sec3-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    position: relative;
     text-align: right;
   }
-  .sec3 .sec3-content figure {
-    width: 78%;
-    right: 0;
+  .sec3 .sec3-content img {
+    width: 80%;
   }
-  .sec3 .sec3-content figure img {
-    width: 90%;
-    -o-object-fit: fill;
-       object-fit: fill;
-  }
-  .sec3 .sec3-word {
-    padding: 60px;
+  .sec3 .sec3-content .sec3-word {
     position: absolute;
+    top: 15%;
     left: 10%;
-    top: 30%;
+    padding: 60px;
+  }
+  .sec3 .sec3-content .sec3-word h3 {
+    font-size: 1.5vw;
   }
   .sec4 {
     margin-top: 5rem;
@@ -929,10 +876,6 @@ footer {
   .sec3 {
     margin-top: 10rem;
   }
-  .sec3 .sec3-word {
-    left: 15%;
-    top: 20%;
-  }
   .sec4 {
     margin-top: 20rem;
   }
@@ -951,6 +894,18 @@ footer {
     background-size: auto 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .sec3 {
+    margin-top: 18rem;
+  }
+  .sec3 .sec3-content .sec3-word {
+    padding: 80px;
+  }
+  .sec3 .sec3-content .sec3-word h3 {
+    font-size: 1.5vw;
   }
 }
 /*# sourceMappingURL=index.css.map */
