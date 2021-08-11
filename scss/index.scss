@@ -115,6 +115,7 @@ footer {
 
 //============================== nav =======================================
 .menu-icon {
+    z-index: 999;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +157,14 @@ footer {
     }
 }
 
+.word-logo {
+    z-index: 888;
+    position: fixed;
+    top: 50%;
+    right: calc(80px/2);
+    transform: translate(50%, -50%);
+}
+
 // menu 收合
 .hide {
     display: none;
@@ -167,18 +176,44 @@ footer {
     text-align: center;
 }
 
+//============================== header =======================================
+.header-title {
+    z-index: 999;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    .header-right {
+        position: absolute;
+        right: 80px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                list-style: none;
+                margin: 0 .5rem;
+                a {
+                    text-decoration: none;
+                    color: rgb(7, 7, 7);
+                }
+            }
+        }
+    }
+}
+
 //============================== carouse& sectionl ===============================
 .sec1 {
     width: calc( 100% - 80px);
     position: relative;
     .sec-carousel {
         z-index: 999;
-         top:50%;
-         left: 50%;
-         transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         position: absolute;
     }
-    .mySlides{
+    .mySlides {
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -189,31 +224,27 @@ footer {
         background-image: url("../images/main01.jpg");
         background-size: 100% auto;
         object-fit: cover;
-        background-repeat:no-repeat;
-
+        background-repeat: no-repeat;
     }
 }
 
-
-
 @keyframes slide {
-  20% {
-    background-image: url("../images/main02.jpg");
+    20% {
+        background-image: url("../images/main02.jpg");
+    }
+    40% {
+        background-image: url("../images/main03.jpg");
+    }
+    60% {
+        background-image: url("../images/main04.jpg");
+    }
+    80% {
+        background-image: url("../images/main05.jpg");
+    }
+    100% {
+        background-image: url("../images/main06.jpg");
+    }
 }
-40% {
-    background-image: url("../images/main03.jpg");
-}
-60% {
-    background-image: url("../images/main04.jpg");
-}
-80% {
-    background-image: url("../images/main05.jpg");
-}
-100% {
-    background-image: url("../images/main06.jpg");
-}
-}
-
 
 //============================== section 2=======================================
 .sec2 {
@@ -654,7 +685,6 @@ footer {
 }
 
 @media (min-width:1200px) {
-
     .sec2 {
         .sec2-data {
             .sec2-title {
@@ -723,8 +753,6 @@ footer {
 }
 
 @media (min-width:1440px) {
-
-
     .sec2 {
         .sec2-word {
             .sec2-content {
@@ -750,12 +778,11 @@ footer {
             }
         }
     }
-
 }
 
-@media screen and (max-width:1500px){
-    .sec1{
-        .mySlides{
+@media screen and (max-width:1500px) {
+    .sec1 {
+        .mySlides {
             background-size: auto 100%;
             object-fit: cover;
         }
