@@ -342,7 +342,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5rem;
 }
 
 .sec2 .sec2-data {
@@ -355,12 +354,14 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .sec2 .sec2-data .sec2-title {
-  width: 30%;
+  width: 25%;
   z-index: 10;
   left: 10%;
+  position: absolute;
 }
 
 .sec2 .sec2-data .sec2-title h2 {
@@ -377,11 +378,13 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 70%;
+  width: 75%;
 }
 
 .sec2 .sec2-data .sec2-img img {
   width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .sec2 .sec2-word .sec2-content {
@@ -654,10 +657,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: Static;
   }
   .sec2 .sec2-data .sec2-title {
     width: 100%;
     text-align: center;
+    position: Static;
     margin: 20px 0;
   }
   .sec2 .sec2-data .sec2-title h2 {
@@ -665,13 +670,17 @@ footer {
   }
   .sec2 .sec2-data .sec2-img {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: 50vh;
+  }
+  .sec2 .sec2-data .sec2-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
   }
   .sec2 .sec2-word .sec2-content {
-    padding: 25px;
-    height: 100%;
+    padding: 30px;
+    height: auto;
+    line-height: 1.5;
     -webkit-box-shadow: 2px 2px 20px rgba(139, 139, 139, 0.6);
             box-shadow: 2px 2px 20px rgba(139, 139, 139, 0.6);
   }
@@ -722,29 +731,19 @@ footer {
 
 @media (min-width: 576px) {
   .sec2 .sec2-data {
-    position: relative;
-  }
-  .sec2 .sec2-data .sec2-title {
-    width: 35%;
-    position: absolute;
-  }
-  .sec2 .sec2-data .sec2-title h2 {
-    font-size: 25px;
-  }
-  .sec2 .sec2-word {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .sec2 .sec2-data .sec2-title h2 {
+    font-size: 23px;
+    letter-spacing: 1.5pt;
+  }
   .sec2 .sec2-word .sec2-content {
-    width: 60%;
+    position: absolute;
+    right: 0;
+    padding: 28px;
   }
   .sec3 {
     padding-bottom: 10rem;
@@ -779,21 +778,11 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .sec2 {
-    margin-bottom: 1rem;
-  }
-  .sec2 .sec2-data .sec2-title h2 {
-    font-size: 28px;
-  }
-  .sec2 .sec2-word {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-top: -1rem;
-  }
   .sec2 .sec2-word .sec2-content {
     margin-right: 0;
-    padding: 3rem;
+    height: auto;
+    line-height: 2;
+    width: 60%;
   }
   .sec3 {
     margin-top: 3rem;
@@ -838,26 +827,8 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .sec2 .sec2-data .sec2-title h2 {
-    font-size: 30px;
-  }
-  .sec2 .sec2-word {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-left: auto;
-    width: 75%;
-    margin-right: 5%;
-  }
   .sec2 .sec2-word .sec2-content {
-    margin-top: -7rem;
-  }
-  .sec2 .sec2-word .sec2-content h3 {
-    font-size: 30px;
-  }
-  .sec2 .sec2-word .sec2-content p {
-    font-size: 18px;
-    line-height: 1.2;
+    right: 5%;
   }
   .sec5 .sec5-content-point figure {
     margin-bottom: 8rem;
@@ -875,8 +846,18 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  .sec2 {
+    margin: 10rem 0;
+  }
   .sec2 .sec2-data .sec2-title h2 {
-    font-size: 50px;
+    font-size: 35px;
+  }
+  .sec2 .sec2-word {
+    margin-top: -7rem;
+  }
+  .sec2 .sec2-word .sec2-content {
+    right: 8%;
+    width: 50%;
   }
   .sec3 {
     position: relative;
@@ -945,9 +926,6 @@ footer {
 }
 
 @media (min-width: 1440px) {
-  .sec2 .sec2-word .sec2-content {
-    margin-top: -14rem;
-  }
   .sec3 {
     margin-top: 10rem;
   }
