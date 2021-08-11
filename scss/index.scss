@@ -540,6 +540,9 @@ section {
             }
         }
     }
+    .header-right{
+        display: none;
+    }
 }
 
 @media (min-width:576px) {
@@ -588,8 +591,20 @@ section {
             flex-basis: 100px;
         }
     }
+    .header-right{
+        display: none;
+    }
 }
 
+@media (max-width:768px) {
+    .sec1 {
+        width: 100%;
+    }
+    .word-logo{
+        display: none;
+    }
+
+}
 @media (min-width:768px) {
     .sec2 {
         .sec2-word {

@@ -697,6 +697,9 @@ section {
   .sec8 .logo-size img {
     width: 50%;
   }
+  .header-right {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) {
@@ -744,6 +747,18 @@ section {
         flex-shrink: 3;
     -ms-flex-preferred-size: 100px;
         flex-basis: 100px;
+  }
+  .header-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec1 {
+    width: 100%;
+  }
+  .word-logo {
+    display: none;
   }
 }
 
